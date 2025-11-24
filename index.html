@@ -1,1 +1,165 @@
-﻿<html><head><title>Meu Portfólio</title></head><body><h1>Bem-vindo!</h1></body></html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio | Controle total do conteúdo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="hero__content">
+      <p class="eyebrow">Portfólio profissional</p>
+      <h1>Construa sua vitrine digital com anonimização em mente.</h1>
+      <p class="lede">Organize currículo, projetos e documentos sensíveis em um só lugar. Você decide como cada peça é exibida, com tarjas automáticas para proteger dados de clientes.</p>
+      <div class="hero__actions">
+        <a class="button primary" href="#resumo">Ver currículo</a>
+        <a class="button ghost" href="#publicacoes">Criar publicação</a>
+      </div>
+    </div>
+    <div class="hero__panel">
+      <p class="panel__title">Painel rápido</p>
+      <ul class="panel__list">
+        <li><strong>Currículo:</strong> atualizado, pronto para download.</li>
+        <li><strong>Projetos:</strong> cartões com links diretos.</li>
+        <li><strong>Documentos:</strong> anonimização com um clique.</li>
+      </ul>
+      <p class="panel__hint">Use o formulário abaixo para criar petições, artigos ou peças com os dados sensíveis ocultados automaticamente.</p>
+    </div>
+  </header>
+
+  <main class="shell">
+    <section id="resumo" class="section">
+      <div class="section__header">
+        <h2>Resumo profissional</h2>
+        <p class="section__subtitle">Panorama rápido das suas qualificações e formas de contato.</p>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <h3>Sobre</h3>
+          <p>Profissional multidisciplinar com foco em soluções jurídicas e tecnológicas. Experiência em redação de petições, análise de dados e comunicação estratégica.</p>
+        </article>
+        <article class="card">
+          <h3>Contato</h3>
+          <ul class="list">
+            <li><strong>E-mail:</strong> voce@exemplo.com</li>
+            <li><strong>Telefone:</strong> (11) 99999-9999</li>
+            <li><strong>LinkedIn:</strong> linkedin.com/in/seu-perfil</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Habilidades</h3>
+          <ul class="tags">
+            <li>Redação técnica</li>
+            <li>Direito civil</li>
+            <li>Gestão de projetos</li>
+            <li>UX writing</li>
+            <li>Anonimização de dados</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="projetos" class="section">
+      <div class="section__header">
+        <h2>Projetos em destaque</h2>
+        <p class="section__subtitle">Selecione o que deseja exibir e mantenha links e descrições sempre sob seu controle.</p>
+      </div>
+      <div class="grid grid--three">
+        <article class="card card--project">
+          <header class="card__header">
+            <p class="pill">Dashboard</p>
+            <span class="status">Publicado</span>
+          </header>
+          <h3>Monitor de prazos processuais</h3>
+          <p>Sistema que consolida prazos e alertas em tempo real, reduzindo riscos de perda de deadlines.</p>
+          <a class="button inline" href="#">Ver detalhes</a>
+        </article>
+        <article class="card card--project">
+          <header class="card__header">
+            <p class="pill">Modelo</p>
+            <span class="status status--draft">Rascunho</span>
+          </header>
+          <h3>Kit de petições padronizadas</h3>
+          <p>Coleção de peças com campos editáveis e opções de tarja para nomes, valores e dados sensíveis.</p>
+          <a class="button inline" href="#">Editar</a>
+        </article>
+        <article class="card card--project">
+          <header class="card__header">
+            <p class="pill">Artigo</p>
+            <span class="status">Publicado</span>
+          </header>
+          <h3>Uso ético de IA em documentos legais</h3>
+          <p>Guia prático sobre como manter confidencialidade ao automatizar análises e revisões.</p>
+          <a class="button inline" href="#">Ler</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="publicacoes" class="section section--highlight">
+      <div class="section__header">
+        <h2>Publicações e documentos</h2>
+        <p class="section__subtitle">Crie petições, artigos e relatórios com anonimização automática dos dados sensíveis.</p>
+      </div>
+      <div class="form-grid">
+        <form class="card card--form" data-form>
+          <h3>Nova publicação</h3>
+          <label class="field">
+            <span>Título</span>
+            <input type="text" name="titulo" placeholder="Ex.: Petição de tutela antecipada" required>
+          </label>
+          <label class="field">
+            <span>Tipo</span>
+            <select name="tipo" required>
+              <option value="Petição">Petição</option>
+              <option value="Artigo">Artigo</option>
+              <option value="Projeto">Projeto</option>
+            </select>
+          </label>
+          <label class="field">
+            <span>Conteúdo</span>
+            <textarea name="conteudo" rows="6" placeholder="Cole aqui o texto que deseja publicar..." required></textarea>
+          </label>
+          <label class="field">
+            <span>Termos sensíveis (separados por vírgula)</span>
+            <input type="text" name="sensivel" placeholder="Ex.: Nome do cliente, CPF, endereço">
+          </label>
+          <p class="help">Os termos informados serão substituídos por tarjas pretas automaticamente. Você pode alternar entre a versão original e a anonimizadas nos cartões gerados.</p>
+          <button class="button primary" type="submit">Publicar com tarjas</button>
+        </form>
+
+        <div class="card card--stack" data-publications-panel>
+          <div class="card__header">
+            <div>
+              <p class="pill">Controle</p>
+              <h3>Suas publicações</h3>
+            </div>
+            <span class="status">Anonimizadas</span>
+          </div>
+          <div class="empty" data-empty-state>
+            <p>Nenhuma publicação criada ainda.</p>
+            <p class="help">Use o formulário ao lado para gerar o primeiro cartão com tarjas automáticas.</p>
+          </div>
+          <div class="stack" data-publications-list></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="shell footer__content">
+      <div>
+        <p class="pill">Disponível</p>
+        <h2>Pronto para novos projetos e desafios.</h2>
+        <p>Entre em contato para discutir colaborações, consultorias jurídicas ou conteúdos sob medida.</p>
+      </div>
+      <a class="button primary" href="mailto:voce@exemplo.com">Falar comigo</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
