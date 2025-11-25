@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html class="dark" lang="pt-br"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Detalhes do Projeto</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+  </style>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#137fec",
+            "background-light": "#f6f7f8",
+            "background-dark": "#101922",
+          },
+          fontFamily: {
+            "display": ["Manrope"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark text-white/90">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<div class="flex flex-1 justify-center py-5 lg:py-10">
+<div class="layout-content-container flex w-full max-w-7xl flex-1 flex-col px-4 sm:px-6 lg:px-8 lg:flex-row lg:gap-12">
+<aside class="w-full lg:w-64 lg:sticky top-10 h-max mb-8 lg:mb-0">
+<div class="flex h-full flex-col justify-between rounded-xl bg-white/5 p-4 border border-white/10">
+<div class="flex flex-col gap-4">
+<div class="flex items-center gap-3">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-12" data-alt="Foto de perfil do profissional" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBBTMdEaqnQ-8epDhnOHiPt1yCcbmdcCfEggs4jMCKj0jQB9layMvZ5DfUnj1mO7OMG6ElXSoomXxn6SJCw2Ni_WB-VUCHCQ3oAm39AJLheluNvf5d6MEeVWd9zO5AyBmZEAIE7bwPEzBAurYphaeQLIXyec8I1BXa9ZYnkSUcLzh_pX2lCOpp4PBOZaIJXgl6ANbGZSF3EGQTvqrk6c8te2E5EDKmGrYoXDBXzk9jkB_e08B_xKwdjxi82qtfHSeKn8c912DxpX5I");'></div>
+<div class="flex flex-col">
+<h1 class="text-white text-base font-bold leading-normal">Nome do Profissional</h1>
+<p class="text-[#9dabb9] text-sm font-normal leading-normal">Advogado / Especialista</p>
+</div>
+</div>
+<nav class="flex flex-col gap-1 mt-4">
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg bg-primary/20 text-primary" href="#challenge">
+<span class="material-symbols-outlined !text-xl" style="font-variation-settings: 'FILL' 1;">target</span>
+<p class="text-sm font-medium leading-normal">O Desafio</p>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-white/10 text-white/80 hover:text-white transition-colors duration-200" href="#solution">
+<span class="material-symbols-outlined !text-xl">lightbulb</span>
+<p class="text-sm font-medium leading-normal">A Solução</p>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-white/10 text-white/80 hover:text-white transition-colors duration-200" href="#results">
+<span class="material-symbols-outlined !text-xl">trending_up</span>
+<p class="text-sm font-medium leading-normal">Resultados</p>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-white/10 text-white/80 hover:text-white transition-colors duration-200" href="#documents">
+<span class="material-symbols-outlined !text-xl">description</span>
+<p class="text-sm font-medium leading-normal">Documentos</p>
+</a>
+</nav>
+</div>
+</div>
+</aside>
+<main class="flex-1 min-w-0">
+<div class="flex flex-col gap-10">
+<header class="flex flex-col gap-4">
+<h1 class="text-white tracking-tight text-3xl md:text-4xl font-bold leading-tight">Caso Jurídico: Reestruturação Societária Complexa</h1>
+<p class="text-white/80 max-w-3xl text-base md:text-lg">
+                    Um breve resumo que encapsula a essência e o sucesso do projeto, guiando a reestruturação de uma empresa para otimizar a conformidade fiscal.
+                  </p>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-x-4 gap-y-6 pt-2">
+<div class="flex flex-col gap-1">
+<p class="text-[#9dabb9] text-sm font-medium leading-normal">Cliente</p>
+<p class="text-white text-base font-normal leading-normal">Empresa de Tecnologia</p>
+</div>
+<div class="flex flex-col gap-1">
+<p class="text-[#9dabb9] text-sm font-medium leading-normal">Minha Função</p>
+<p class="text-white text-base font-normal leading-normal">Advogado Principal</p>
+</div>
+<div class="flex flex-col gap-1">
+<p class="text-[#9dabb9] text-sm font-medium leading-normal">Ano</p>
+<p class="text-white text-base font-normal leading-normal">2023</p>
+</div>
+<div class="flex flex-col gap-1">
+<p class="text-[#9dabb9] text-sm font-medium leading-normal">Área</p>
+<p class="text-white text-base font-normal leading-normal">Direito Societário</p>
+</div>
+</div>
+</header>
+<div class="bg-cover bg-center overflow-hidden rounded-xl h-64 md:h-96" data-alt="Imagem abstrata de um prédio de tribunal ou escritório de advocacia" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBqwpEOzuTKWsc2LKJ1Xxpg4ELFZU3L7dQxfEOJMZEgk84w3X63UKcFt8NJ-mW7Q3vum18ilHrDcSG-TBsNGTjKGuvL7Tn-Nt3rYahpUpvbb76hRLii3RJx6xHS4eFpZ_UTkIeBc3lzz3yY_Phx1LaaG3FHw3oDJvmksaf9uDn8fkOTFbjY7FAYT7GQmeuzl1LFlvBKUtSMv9oyQi-fcy4DyArnjgevLye9cIt8c_vcZjTD42IxbrA2VgqnD1GxhucURDTTuaoRp-o");'>
+</div>
+<div class="flex flex-col gap-12">
+<section id="challenge">
+<h2 class="text-white text-2xl font-bold tracking-tight mb-4">O Desafio</h2>
+<p class="text-white/80 text-base font-normal leading-relaxed">
+                  A empresa cliente enfrentava uma estrutura societária obsoleta que resultava em ineficiências fiscais significativas e riscos de conformidade. O principal desafio era redesenhar completamente a estrutura para alinhar-se com a legislação atual, minimizar a carga tributária e preparar a empresa para futuras expansões internacionais, tudo isso sem interromper as operações diárias.
+                </p>
+</section>
+<section id="solution">
+<h2 class="text-white text-2xl font-bold tracking-tight mb-4">A Solução</h2>
+<p class="text-white/80 text-base font-normal leading-relaxed mb-6">
+                  Conduzi uma análise aprofundada da estrutura existente, identificando pontos críticos de risco e oportunidades de otimização. O processo envolveu várias etapas-chave para garantir um resultado robusto e seguro para o cliente.
+                </p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 my-8">
+<figure class="relative group overflow-hidden rounded-lg">
+<img alt="Equipe discutindo um diagrama em uma lousa branca" class="w-full h-full object-cover aspect-video transition-transform duration-300 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_pzR6V6wZTuPX1VKTfFiT82wbCgWakZRtIllwdkejXCJaWHF5i4Dcqz-xdDdvUdj1SZ7OPB7ZJQufIfgt5-msZNevGnH-hGoJgbrUTF-2DBzQk2IjRMTI88qzC0uKNxIW9Y7NXRvLkG_u6ADNoJ2eU3z8JEOnkeW_uaddiBZ4Ixbo_pKJsiSVBDA6WgHhFOrO-OlFttqlc-RT5R6Y--x5G9eieRAiong_TbbzbrD9JHQkp35fnLjsqQk9SK40CoUZTEKPfCFt1LA"/>
+<figcaption class="absolute inset-0 bg-black/20 flex items-end p-4">
+<p class="text-white text-sm font-medium">Reunião de planejamento estratégico</p>
+</figcaption>
+</figure>
+<figure class="relative group overflow-hidden rounded-lg">
+<img alt="Pessoa trabalhando em um laptop com gráficos e dados na tela" class="w-full h-full object-cover aspect-video transition-transform duration-300 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBR47rMozqACTh8Wy7ptZ1CQJKbWarkhezFAx7FsGP-hr7BsTbVQvwL4_fz5dM8AiehJDe2kgKzKdHVSmEOtTQJWd51_cUC3EvXa6PdWvzsAZVg9n-HcD0KhhAhufHvk_Ye8vsxP6PSu1ek93CQWgLVJrfitoYXdWn3a221MoB_9E0K5k4gN-GeeQRHHVdv8ficeTd0K2dCltipoAhDC-6E7T4pKbvRfabvR5B9QvTGiYhUAr_uDQe2NS10mlPqUgvq_V1momfG-ZY"/>
+<figcaption class="absolute inset-0 bg-black/20 flex items-end p-4">
+<p class="text-white text-sm font-medium">Análise de dados e projeções</p>
+</figcaption>
+</figure>
+</div>
+<ul class="list-disc list-outside space-y-3 text-white/80 pl-5 leading-relaxed">
+<li>Mapeamento completo dos ativos e passivos da empresa para um diagnóstico preciso da situação atual.</li>
+<li>Desenvolvimento de múltiplos cenários de reestruturação, com projeções fiscais detalhadas para cada um, permitindo uma decisão informada.</li>
+<li>Elaboração de todos os documentos jurídicos necessários, incluindo alterações contratuais, atas de reunião e registros em órgãos competentes.</li>
+<li>Coordenação com as equipes de contabilidade e finanças do cliente para garantir uma transição suave e em total conformidade.</li>
+</ul>
+</section>
+<section id="results">
+<h2 class="text-white text-2xl font-bold tracking-tight mb-4">Resultados e Impacto</h2>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+<div class="flex flex-col gap-2 p-6 rounded-lg bg-white/5 border border-white/10">
+<span class="material-symbols-outlined text-primary text-3xl mb-2">savings</span>
+<p class="text-3xl font-bold text-white">50%</p>
+<p class="text-white/70 text-sm">Redução nos custos com conformidade fiscal.</p>
+</div>
+<div class="flex flex-col gap-2 p-6 rounded-lg bg-white/5 border border-white/10">
+<span class="material-symbols-outlined text-primary text-3xl mb-2">speed</span>
+<p class="text-3xl font-bold text-white">+30%</p>
+<p class="text-white/70 text-sm">Aumento na eficiência da governança corporativa.</p>
+</div>
+<div class="flex flex-col gap-2 p-6 rounded-lg bg-white/5 border border-white/10">
+<span class="material-symbols-outlined text-primary text-3xl mb-2">gpp_good</span>
+<p class="text-3xl font-bold text-white">100%</p>
+<p class="text-white/70 text-sm">Conformidade com a nova legislação.</p>
+</div>
+</div>
+</section>
+<section id="documents">
+<h2 class="text-white text-2xl font-bold tracking-tight mb-4">Documentos Relevantes</h2>
+<div class="border border-white/10 rounded-xl bg-white/5 overflow-hidden">
+<div class="p-4 bg-white/5 border-b border-white/10 flex justify-between items-center">
+<p class="text-white font-medium">Petição Inicial (Anonimizada)</p>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary !text-xl" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+<p class="text-sm text-white/80 hidden sm:block">Dados sensíveis foram ocultados</p>
+</div>
+</div>
+<div class="p-4 md:p-8 bg-background-dark/50">
+<div class="relative bg-white p-8 shadow-lg max-w-3xl mx-auto text-black/80 text-sm leading-relaxed">
+<h3 class="text-lg font-bold text-center mb-6 text-black">PETIÇÃO INICIAL</h3>
+<p class="mb-4">Exmo. Sr. Dr. Juiz de Direito da Vara Cível da Comarca de <span class="bg-black text-black select-none rounded-sm px-1">XXXXXXXX</span>.</p>
+<p class="mb-4"><span class="bg-black text-black select-none rounded-sm px-1">NOME DO REQUERENTE</span>, qualificação, portador do CPF <span class="bg-black text-black select-none rounded-sm px-1">XXX.XXX.XXX-XX</span>, residente e domiciliado na <span class="bg-black text-black select-none rounded-sm px-1">Rua X, nº Y</span>, por seu advogado, vem respeitosamente perante V. Exa. propor a presente Ação.</p>
+<p class="mb-4">O objeto da presente lide consiste na análise do contrato firmado em <span class="bg-black text-black select-none rounded-sm px-1">DD/MM/AAAA</span>, cujo valor era de <span class="bg-black text-black select-none rounded-sm px-1">R$ XX.XXX,XX</span>, referente à aquisição de um bem móvel que apresentou vícios redibitórios logo após a compra, causando prejuízos ao Requerente.</p>
+<p>Dessa forma, busca-se a tutela jurisdicional para a resolução do contrato, com a devida restituição dos valores pagos e indenização por danos morais e materiais, conforme os fatos e fundamentos a seguir expostos.</p>
+</div>
+</div>
+</div>
+</section>
+</div>
+<div class="flex flex-col sm:flex-row gap-4 pt-8 mt-4 border-t border-white/10">
+<a class="flex-1 text-center py-3 px-6 rounded-lg bg-white/10 text-white font-semibold hover:bg-white/20 transition-colors duration-200" href="#">Voltar ao Portfólio</a>
+<a class="flex-1 text-center py-3 px-6 rounded-lg bg-primary text-white font-semibold hover:bg-primary/90 transition-colors duration-200" href="#">Próximo Projeto</a>
+</div>
+</div>
+</main>
+</div>
+</div>
+</div>
+</div>
+
+</body></html>

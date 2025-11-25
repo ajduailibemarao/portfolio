@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html class="dark" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Portfólio Profissional</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#137fec",
+              "background-light": "#f6f7f8",
+              "background-dark": "#101922",
+            },
+            fontFamily: {
+              "display": ["Manrope", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+      }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200">
+<div class="relative flex min-h-screen w-full flex-col">
+<div class="layout-container flex h-full grow flex-col">
+<div class="flex flex-1 justify-center px-4 sm:px-8 md:px-10 lg:px-20 xl:px-40 py-5">
+<div class="layout-content-container flex w-full flex-col max-w-6xl flex-1">
+<header class="flex items-center justify-between whitespace-nowrap px-4 py-6 md:px-0">
+<div class="flex items-center gap-3 text-gray-900 dark:text-white">
+<div class="size-6 text-primary">
+<svg fill="currentColor" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M0 1a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V1zm13 2H3v10h10V3z"></path></svg>
+</div>
+<h2 class="text-xl font-bold">Nome do Profissional</h2>
+</div>
+<nav class="hidden md:flex flex-1 justify-end items-center gap-8">
+<div class="flex items-center gap-8">
+<a class="text-sm font-medium text-gray-500 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors" href="#">Sobre</a>
+<a class="text-sm font-medium text-gray-500 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors" href="#">Projetos</a>
+<a class="text-sm font-medium text-gray-500 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors" href="#">Experiência</a>
+<a class="text-sm font-medium text-gray-500 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors" href="#">Contato</a>
+</div>
+</nav>
+<button class="md:hidden flex items-center justify-center rounded-lg h-10 w-10 text-gray-600 dark:text-gray-300">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</header>
+<main class="flex-grow">
+<section class="py-24 sm:py-32 md:py-40">
+<div class="container mx-auto px-4">
+<div class="flex flex-col-reverse lg:flex-row items-center justify-center gap-16 lg:gap-24">
+<div class="flex flex-col gap-8 max-w-xl text-center lg:text-left">
+<div class="flex flex-col gap-4">
+<h1 class="text-4xl font-black leading-tight tracking-tight sm:text-5xl lg:text-6xl text-gray-900 dark:text-white">
+                                              Olá, eu sou Nome do Profissional
+                                            </h1>
+<p class="text-lg text-gray-600 dark:text-gray-400">
+                                              Um breve e envolvente resumo sobre meu perfil profissional, minhas paixões e o propósito deste portfólio, projetado para destacar minhas competências e projetos.
+                                            </p>
+</div>
+<div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+<button class="flex w-full sm:w-auto min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-primary text-white text-base font-bold tracking-wide hover:bg-primary/90 transition-colors shadow-lg shadow-primary/20">
+<span class="truncate">Ver Meus Projetos</span>
+</button>
+<button class="flex w-full sm:w-auto min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-gray-200 dark:bg-white/10 text-gray-800 dark:text-white text-base font-bold tracking-wide hover:bg-gray-300 dark:hover:bg-white/20 transition-colors">
+<span class="truncate">Entrar em Contato</span>
+</button>
+</div>
+</div>
+<div class="flex-shrink-0">
+<div class="relative w-56 h-56 sm:w-64 sm:h-64 lg:w-80 lg:h-80">
+<img class="relative w-full h-full object-cover rounded-full" data-alt="Foto de perfil profissional de um homem sorrindo em um fundo neutro." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD08LYW5qIcXxojB-uNITEBNmiEUb-ouRgLZm__yyAUVYVva4jC_shkIIUyp02_vmjT4f7l48RXwVzR606xursSwYAP02G5KS4T8QnE7rShYSDkmD2K-tYwNEutT79tqvYrOHusZr0OU9bAWKNHsOQ9gK4_HBBWs2NaHRWt3qgXZ77UflxYmaSz50ToRXH1jVoigDtn2_bC76YEQ8wb6orT1yxhToMRHK-vH3ZjQgINjTy7ErnVdcsrEEMxd-gnh0KgrjNEXqAFdMM"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="flex flex-col gap-6 px-5 py-10 text-center border-t border-gray-200 dark:border-white/10">
+<p class="text-gray-500 dark:text-gray-400 text-sm">© 2024 Nome do Profissional. Todos os direitos reservados.</p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+</body></html>

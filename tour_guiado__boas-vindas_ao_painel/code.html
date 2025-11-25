@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html class="light" lang="pt-br"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Bem-vindo ao Painel de Controle</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#137fec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 24
+        }
+    </style>
+</head>
+<body class="font-display">
+<div class="relative flex min-h-screen w-full flex-col bg-background-light dark:bg-background-dark group/design-root overflow-hidden">
+<!-- Background Dimmer -->
+<div class="absolute inset-0 bg-gray-900/40 dark:bg-black/60 z-10"></div>
+<!-- Blurred Background Dashboard (for context) -->
+<div class="absolute inset-0 blur-sm">
+<div class="h-full w-full bg-white dark:bg-background-dark/80 p-8">
+<div class="w-full h-16 bg-gray-200 dark:bg-gray-800/50 rounded-lg mb-6"></div>
+<div class="grid grid-cols-3 gap-6">
+<div class="col-span-2 h-40 bg-gray-200 dark:bg-gray-800/50 rounded-lg"></div>
+<div class="h-40 bg-gray-200 dark:bg-gray-800/50 rounded-lg"></div>
+<div class="h-64 bg-gray-200 dark:bg-gray-800/50 rounded-lg"></div>
+<div class="col-span-2 h-64 bg-gray-200 dark:bg-gray-800/50 rounded-lg"></div>
+</div>
+</div>
+</div>
+<!-- Centered Modal -->
+<div class="relative z-20 flex h-full min-h-screen grow flex-col items-center justify-center p-4">
+<div class="flex w-full max-w-lg flex-col items-center gap-4 rounded-xl bg-white dark:bg-background-dark p-6 text-center shadow-2xl md:p-10">
+<!-- Icon -->
+<div class="mb-2 flex h-16 w-16 items-center justify-center rounded-full bg-primary/10 text-primary">
+<span class="material-symbols-outlined !text-4xl">
+                        verified_user
+                    </span>
+</div>
+<!-- HeadlineText -->
+<h1 class="text-2xl font-bold leading-tight tracking-tight text-[#111418] dark:text-white md:text-3xl">Bem-vindo(a) ao seu Painel de Controle</h1>
+<!-- BodyText -->
+<p class="text-base font-normal leading-relaxed text-gray-600 dark:text-gray-300">Aqui você tem controle total sobre o conteúdo do seu portfólio e garante sua privacidade através da anonimização de dados. Você está no comando.</p>
+<!-- ButtonGroup -->
+<div class="mt-4 flex w-full max-w-sm flex-col items-stretch gap-3">
+<button class="flex h-12 min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-primary px-5 text-base font-bold leading-normal tracking-[0.015em] text-white transition-colors hover:bg-primary/90">
+<span class="truncate">Iniciar Tour</span>
+</button>
+<button class="flex h-12 min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-transparent px-5 text-base font-bold leading-normal tracking-[0.015em] text-gray-700 transition-colors hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700/50">
+<span class="truncate">Pular Tour</span>
+</button>
+</div>
+<!-- Pagination/Progress Indicator -->
+<div class="flex items-center justify-center pt-4">
+<div class="flex items-center gap-2">
+<div class="h-2 w-2 rounded-full bg-primary"></div>
+<div class="h-2 w-2 rounded-full bg-gray-300 dark:bg-gray-600"></div>
+<div class="h-2 w-2 rounded-full bg-gray-300 dark:bg-gray-600"></div>
+<div class="h-2 w-2 rounded-full bg-gray-300 dark:bg-gray-600"></div>
+<div class="h-2 w-2 rounded-full bg-gray-300 dark:bg-gray-600"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body></html>

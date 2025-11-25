@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Guided Tour - Manage Projects</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+    }
+  </style>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#137fec",
+            "background-light": "#f6f7f8",
+            "background-dark": "#101922",
+          },
+          fontFamily: {
+            "display": ["Manrope", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+</head>
+<body class="font-display">
+<div class="relative flex min-h-screen w-full flex-col bg-background-light dark:bg-background-dark group/design-root" style="background-image: url('data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'100\' height=\'100\' viewBox=\'0 0 100 100\'%3E%3Cg fill-rule=\'evenodd\'%3E%3Cg fill=\'%23a0aec0\' fill-opacity=\'0.08\'%3E%3Cpath opacity=\'.5\' d=\'M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h16v9h1v-9h9v9h1v-9h9v9h1v-9h9v9h1v-9h9v9h1v-9h9v9h1v-9h9v9h1v-9h9v9h1v-9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z\'/%3E%3Cpath d=\'M6 5V0h1v5h94V0h1v5h-6v95h6V95h1v5H6v-5h1v-95H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');">
+<!-- Overlay -->
+<div class="fixed inset-0 z-40 bg-black/70"></div>
+<!-- Main Content -->
+<div class="relative z-0 flex h-full grow flex-col">
+<div class="p-4 sm:p-6 md:p-10">
+<div class="mx-auto flex max-w-7xl flex-col gap-8">
+<!-- Header -->
+<div class="flex items-center justify-between">
+<h1 class="text-2xl font-bold text-slate-800 dark:text-white">Painel de Controle</h1>
+<div class="flex items-center gap-4">
+<button class="flex h-10 w-10 items-center justify-center rounded-full bg-white dark:bg-slate-800">
+<span class="material-symbols-outlined text-slate-600 dark:text-slate-300">notifications</span>
+</button>
+<img alt="User avatar" class="h-10 w-10 rounded-full object-cover" data-alt="User avatar" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4wB5pFR2v5FxOWf87Ym_OXKTmWvSFjTpSthSz-KjnuDpkmQL7egP_ZHdA2Oj6dVbXuaiVwrIZevlV7DOfa3smwwizGwuJBlJ3OhFROdFdelPC9IVGbkTV-HEMrQz1e1XIjFCkFbIUgeblSDzYvl6jvZZ0dOdFhjPfFKhT69F3QDqMIUVZNBDypR-7lBk3o6xBw9xVMpEoL1fa9L9jQ0fXzhnfHBCyKxm2IiWE6nRvX3-fHW5a95EKYLS0eNag5bXVWLTwv0dneGk"/>
+</div>
+</div>
+<!-- Highlighted Area -->
+<div class="relative z-50 rounded-xl border border-dashed border-primary/50 bg-background-light dark:bg-background-dark p-6 shadow-2xl shadow-primary/20">
+<div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+<div class="space-y-4">
+<h3 class="font-bold text-slate-800 dark:text-white">Meus Projetos</h3>
+<p class="text-sm text-slate-500 dark:text-slate-400">Adicione ou edite os projetos em seu portfólio.</p>
+<button class="flex items-center gap-2 rounded-lg bg-slate-200 dark:bg-slate-700 px-4 py-2 text-sm font-bold text-slate-800 dark:text-white">
+<span>Adicionar Projeto</span>
+<span class="material-symbols-outlined text-base">add</span>
+</button>
+</div>
+<div class="space-y-4">
+<h3 class="font-bold text-slate-800 dark:text-white">Gerenciar Documentos</h3>
+<p class="text-sm text-slate-500 dark:text-slate-400">Faça upload e gerencie seu currículo.</p>
+<button class="flex items-center gap-2 rounded-lg bg-slate-200 dark:bg-slate-700 px-4 py-2 text-sm font-bold text-slate-800 dark:text-white">
+<span>Ver Documentos</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Placeholder content -->
+<div class="mt-8 rounded-xl bg-white/30 dark:bg-slate-800/30 p-6 blur-sm">
+<h2 class="mb-4 text-xl font-bold text-slate-800 dark:text-white">Estatísticas</h2>
+<div class="h-48 rounded-lg bg-slate-200 dark:bg-slate-700"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Guided Tour Popover -->
+<div class="fixed inset-0 z-50 flex items-center justify-center p-4" style="--tw-translate-y: 200px;">
+<div class="w-full max-w-md rounded-xl bg-background-light dark:bg-background-dark p-6 shadow-2xl">
+<div class="flex flex-col">
+<h2 class="text-xl font-bold leading-tight tracking-light text-slate-900 dark:text-white">Gerencie seus Projetos e Documentos</h2>
+<p class="mt-2 text-base font-normal leading-normal text-slate-600 dark:text-slate-400">Aqui você tem total controle sobre os trabalhos exibidos em seu portfólio. Adicione, edite ou oculte projetos e documentos com apenas alguns cliques.</p>
+<div class="mt-6 flex items-center justify-between">
+<!-- Progress Indicator -->
+<div class="flex items-center gap-2">
+<span class="block h-2 w-2 rounded-full bg-slate-300 dark:bg-slate-600"></span>
+<span class="block h-2 w-2 rounded-full bg-primary"></span>
+<span class="block h-2 w-2 rounded-full bg-slate-300 dark:bg-slate-600"></span>
+</div>
+<!-- Button Group -->
+<div class="flex flex-1 justify-end gap-3">
+<button class="flex h-10 min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-transparent px-4 text-sm font-bold leading-normal tracking-[0.015em] text-slate-700 dark:text-slate-300">
+<span class="truncate">Voltar</span>
+</button>
+<button class="flex h-10 min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-primary px-4 text-sm font-bold leading-normal tracking-[0.015em] text-white">
+<span class="truncate">Próximo</span>
+</button>
+</div>
+</div>
+<div class="mt-4 flex w-full justify-center">
+<p class="cursor-pointer text-sm font-normal leading-normal text-slate-500 dark:text-slate-400 underline">Pular Tour</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body></html>

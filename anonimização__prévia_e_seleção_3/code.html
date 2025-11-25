@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Anonymization Review</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+        }
+        .dark {
+            display: none;
+        }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#137fec",
+              "background-light": "#f6f7f8",
+            },
+            fontFamily: {
+              "display": ["Manrope", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+</head>
+<body class="bg-background-light font-display">
+<div class="flex h-screen w-full">
+<aside class="flex w-64 flex-col border-r border-slate-200 bg-white">
+<div class="flex h-full flex-col justify-between p-4">
+<div class="flex flex-col gap-4">
+<div class="flex items-center gap-3 p-2">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" data-alt="User avatar image" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD-lpCgRse0B9fDAhwV4SYNqS_VcuwppGfAAOOv1mOfEQb0epuqnyWDGuEUReTn39xquRnWYmGNuKylYZm0YZBzvtek0tdzJGxMRDF3BmGlThdKqy9TliS4G2NlRgkX8uiIWhCTIcUspH7DaKwJ9Su-quE17VGousy5NYlKzf7Mv2bJ5lWU27otv1taxCgH9WKcWZTFVwOwRtWHwvPdYk8_Z6SlFRU_ZLkZq_k_DGgjFMTa9gAzVpC0GscLncp-W8W3UpamWcUcu5o");'></div>
+<div class="flex flex-col">
+<h1 class="text-slate-900 text-base font-medium leading-normal">John Doe</h1>
+<p class="text-slate-500 text-sm font-normal leading-normal">john.doe@email.com</p>
+</div>
+</div>
+<nav class="flex flex-col gap-2">
+<a class="flex items-center gap-3 rounded-lg px-3 py-2 text-slate-600 hover:bg-slate-100" href="#">
+<span class="material-symbols-outlined">dashboard</span>
+<p class="text-sm font-medium leading-normal">Dashboard</p>
+</a>
+<a class="flex items-center gap-3 rounded-lg px-3 py-2 text-slate-600 hover:bg-slate-100" href="#">
+<span class="material-symbols-outlined">person</span>
+<p class="text-sm font-medium leading-normal">My Portfolio</p>
+</a>
+<a class="flex items-center gap-3 rounded-lg bg-primary/10 px-3 py-2 text-primary" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">security</span>
+<p class="text-sm font-medium leading-normal">Anonymization Tool</p>
+</a>
+<a class="flex items-center gap-3 rounded-lg px-3 py-2 text-slate-600 hover:bg-slate-100" href="#">
+<span class="material-symbols-outlined">settings</span>
+<p class="text-sm font-medium leading-normal">Settings</p>
+</a>
+</nav>
+</div>
+<div class="flex flex-col gap-1">
+<a class="flex items-center gap-3 rounded-lg px-3 py-2 text-slate-600 hover:bg-slate-100" href="#">
+<span class="material-symbols-outlined">help</span>
+<p class="text-sm font-medium leading-normal">Help Center</p>
+</a>
+<a class="flex items-center gap-3 rounded-lg px-3 py-2 text-slate-600 hover:bg-slate-100" href="#">
+<span class="material-symbols-outlined">logout</span>
+<p class="text-sm font-medium leading-normal">Logout</p>
+</a>
+</div>
+</div>
+</aside>
+<main class="flex flex-1 flex-col overflow-hidden">
+<div class="flex flex-1 overflow-hidden">
+<div class="flex flex-1 flex-col bg-background-light">
+<div class="border-b border-slate-200 px-6 pt-6 pb-4">
+<div class="flex flex-wrap items-start justify-between gap-4">
+<div class="flex flex-col gap-2">
+<p class="text-slate-900 text-3xl font-bold leading-tight tracking-tight">Anonymization: Preview and Selection</p>
+<p class="text-slate-500 text-base font-normal leading-normal">Review AI suggestions or draw redactions manually. Click a redaction to edit or remove it.</p>
+</div>
+<div class="flex items-center gap-2 flex-shrink-0">
+<button class="flex h-10 cursor-pointer items-center justify-center gap-2 overflow-hidden rounded-lg bg-slate-200 px-4 text-sm font-bold leading-normal tracking-[0.015em] text-slate-800 hover:bg-slate-300">Go Back</button>
+<button class="flex h-10 cursor-pointer items-center justify-center gap-2 overflow-hidden rounded-lg bg-primary px-4 text-sm font-bold leading-normal tracking-[0.015em] text-white hover:bg-primary/90">
+<span>Finalize Redactions</span>
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<div class="flex justify-between gap-2 px-6 py-3 border-b border-slate-200 items-center">
+<div class="flex items-center gap-1">
+<button class="rounded-md p-2 text-slate-600 hover:bg-slate-200">
+<span class="material-symbols-outlined">zoom_in</span>
+</button>
+<button class="rounded-md p-2 text-slate-600 hover:bg-slate-200">
+<span class="material-symbols-outlined">zoom_out</span>
+</button>
+<div class="h-6 w-px bg-slate-200 mx-2"></div>
+<button class="flex items-center gap-2 rounded-md p-2 text-slate-600 bg-slate-200 ring-2 ring-primary">
+<span class="material-symbols-outlined">draw</span>
+<span class="text-sm font-medium">Draw</span>
+</button>
+<button class="rounded-md p-2 text-slate-600 hover:bg-slate-200">
+<span class="material-symbols-outlined">pan_tool</span>
+</button>
+</div>
+<div class="flex items-center gap-4">
+<div class="flex items-center gap-2 text-sm text-slate-600">
+<span class="material-symbols-outlined text-xl text-primary">auto_awesome</span>
+<p class="font-medium">AI detected 5 potential sensitive data points</p>
+</div>
+<button class="flex h-9 items-center justify-center gap-2 rounded-lg bg-primary/10 px-4 text-sm font-bold leading-normal tracking-[0.015em] text-primary hover:bg-primary/20">Accept All</button>
+</div>
+</div>
+<div class="flex-1 overflow-auto p-8 bg-slate-200/50 flex justify-center">
+<div class="w-full max-w-4xl shadow-lg relative cursor-crosshair">
+<div class="bg-center bg-no-repeat bg-cover aspect-[8.5/11] w-full" data-alt="A preview of a user's resume document." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCD8SxohBVQTGJ08TEnP57Cd801OC0srhzMB0xYs46dCuiYzM0GjqiKC6cp-ehZKydoH_sUdH9JjRZZTC_mLmIbYWgoyMs0px6TV7SyS0uCatL44VRdwpjnwmhYKf8EM_1uXPh35N6YWlcViW3wr6vztWETsQBL5K9LDaLHQszFxzH4HV7Hq0NqfiqUhYXP_1sNZYke-N4tk9chN4Kgxojhn2TlIy6gLnucFJKpKthZKWpjjZYpgzAOfsJ8lyEmwcQwiMCavqV4GKo");'></div>
+<div class="absolute top-[10%] left-[10%] w-[25%] h-[3%] bg-primary/20 border-b-2 border-dotted border-primary group cursor-pointer">
+<div class="absolute -top-10 left-1/2 -translate-x-1/2 hidden group-hover:flex items-center gap-2 p-1.5 bg-slate-900 rounded-lg shadow-lg text-white">
+<button class="h-7 w-7 rounded-md hover:bg-slate-700 flex items-center justify-center" title="Accept Redaction">
+<span class="material-symbols-outlined text-lg">check</span>
+</button>
+<button class="h-7 w-7 rounded-md hover:bg-slate-700 flex items-center justify-center" title="Ignore Suggestion">
+<span class="material-symbols-outlined text-lg">close</span>
+</button>
+</div>
+</div>
+<div class="absolute top-[15%] left-[10%] w-[20%] h-[3%] bg-primary/20 border-b-2 border-dotted border-primary group cursor-pointer">
+<div class="absolute -top-10 left-1/2 -translate-x-1/2 hidden group-hover:flex items-center gap-2 p-1.5 bg-slate-900 rounded-lg shadow-lg text-white">
+<button class="h-7 w-7 rounded-md hover:bg-slate-700 flex items-center justify-center" title="Accept Redaction">
+<span class="material-symbols-outlined text-lg">check</span>
+</button>
+<button class="h-7 w-7 rounded-md hover:bg-slate-700 flex items-center justify-center" title="Ignore Suggestion">
+<span class="material-symbols-outlined text-lg">close</span>
+</button>
+</div>
+</div>
+<div class="absolute top-[25%] left-[15%] w-[40%] h-[2.5%] bg-black"></div>
+<div class="absolute top-[38%] left-[15%] w-[30%] h-[2.5%] bg-black cursor-move group">
+<div class="absolute inset-0 border-2 border-primary"></div>
+<div class="absolute -top-1.5 -left-1.5 h-3 w-3 bg-white rounded-full border-2 border-primary cursor-nwse-resize"></div>
+<div class="absolute -top-1.5 -right-1.5 h-3 w-3 bg-white rounded-full border-2 border-primary cursor-nesw-resize"></div>
+<div class="absolute -bottom-1.5 -left-1.5 h-3 w-3 bg-white rounded-full border-2 border-primary cursor-nesw-resize"></div>
+<div class="absolute -bottom-1.5 -right-1.5 h-3 w-3 bg-white rounded-full border-2 border-primary cursor-nwse-resize"></div>
+<div class="absolute -top-12 left-1/2 -translate-x-1/2 flex items-center gap-1 p-1 bg-slate-900 rounded-lg shadow-lg">
+<button class="h-8 w-8 rounded-md hover:bg-slate-700 flex items-center justify-center">
+<div class="h-5 w-5 rounded-sm bg-black border-2 border-white"></div>
+</button>
+<button class="h-8 w-8 rounded-md hover:bg-slate-700 flex items-center justify-center">
+<div class="h-5 w-5 rounded-sm bg-blue-500"></div>
+</button>
+<button class="h-8 w-8 rounded-md hover:bg-slate-700 flex items-center justify-center">
+<div class="h-5 w-5 rounded-sm bg-red-500"></div>
+</button>
+<div class="h-6 w-px bg-slate-600 mx-1"></div>
+<button class="h-8 w-8 rounded-md hover:bg-slate-700 text-white flex items-center justify-center">
+<span class="material-symbols-outlined text-lg">delete</span>
+</button>
+</div>
+</div>
+<div class="absolute top-[55%] left-[20%] w-[50%] h-[3%] bg-black/40 border-2 border-dashed border-primary"></div>
+<div class="absolute top-[65%] left-[15%] w-[25%] h-[2.5%] bg-primary/20 border-b-2 border-dotted border-primary group cursor-pointer">
+<div class="absolute -top-10 left-1/2 -translate-x-1/2 hidden group-hover:flex items-center gap-2 p-1.5 bg-slate-900 rounded-lg shadow-lg text-white">
+<button class="h-7 w-7 rounded-md hover:bg-slate-700 flex items-center justify-center" title="Accept Redaction">
+<span class="material-symbols-outlined text-lg">check</span>
+</button>
+<button class="h-7 w-7 rounded-md hover:bg-slate-700 flex items-center justify-center" title="Ignore Suggestion">
+<span class="material-symbols-outlined text-lg">close</span>
+</button>
+</div>
+</div>
+<div class="absolute top-[70%] left-[30%] w-[35%] h-[4%] bg-black"></div>
+<div class="absolute top-[80%] left-[15%] w-[60%] h-[2.5%] bg-primary/20 border-b-2 border-dotted border-primary group cursor-pointer">
+<div class="absolute -top-10 left-1/2 -translate-x-1/2 hidden group-hover:flex items-center gap-2 p-1.5 bg-slate-900 rounded-lg shadow-lg text-white">
+<button class="h-7 w-7 rounded-md hover:bg-slate-700 flex items-center justify-center" title="Accept Redaction">
+<span class="material-symbols-outlined text-lg">check</span>
+</button>
+<button class="h-7 w-7 rounded-md hover:bg-slate-700 flex items-center justify-center" title="Ignore Suggestion">
+<span class="material-symbols-outlined text-lg">close</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<aside class="flex w-80 flex-col border-l border-slate-200 bg-white">
+<div class="flex h-full flex-col">
+<div class="p-4 border-b border-slate-200">
+<h2 class="text-slate-900 text-lg font-bold leading-tight">Review Redactions</h2>
+</div>
+<div class="flex-1 overflow-y-auto" x-data="{ activeTab: 'manual' }">
+<div class="border-b border-slate-200">
+<nav aria-label="Tabs" class="-mb-px flex">
+<a :class="{'border-primary text-primary': activeTab === 'suggestions', 'border-transparent text-slate-500 hover:text-slate-700 hover:border-slate-300': activeTab !== 'suggestions'}" @click.prevent="activeTab = 'suggestions'" class="w-1/2 py-3 px-1 text-center border-b-2 font-medium text-sm" href="#">AI Suggestions (5)</a>
+<a :class="{'border-primary text-primary': activeTab === 'manual', 'border-transparent text-slate-500 hover:text-slate-700 hover:border-slate-300': activeTab !== 'manual'}" @click.prevent="activeTab = 'manual'" class="w-1/2 py-3 px-1 text-center border-b-2 font-medium text-sm" href="#">Accepted (3)</a>
+</nav>
+</div>
+<div class="flex flex-col gap-2 p-2" x-show="activeTab === 'suggestions'">
+<div class="p-3 rounded-lg border border-slate-200 hover:bg-slate-100/80 cursor-pointer">
+<p class="text-sm font-medium text-slate-800">john.doe@email.com</p>
+<div class="flex justify-between items-center mt-2">
+<p class="text-xs text-slate-500">Type: Email</p>
+<div class="flex items-center gap-1">
+<button class="p-1 rounded-md text-slate-500 hover:bg-slate-300/50 hover:text-slate-800" title="Accept">
+<span class="material-symbols-outlined text-lg">check_circle</span>
+</button>
+<button class="p-1 rounded-md text-slate-500 hover:bg-slate-300/50 hover:text-slate-800" title="Ignore">
+<span class="material-symbols-outlined text-lg">cancel</span>
+</button>
+</div>
+</div>
+</div>
+<div class="p-3 rounded-lg border border-slate-200 hover:bg-slate-100/80 cursor-pointer">
+<p class="text-sm font-medium text-slate-800">(11) 99999-9999</p>
+<div class="flex justify-between items-center mt-2">
+<p class="text-xs text-slate-500">Type: Phone</p>
+<div class="flex items-center gap-1">
+<button class="p-1 rounded-md text-slate-500 hover:bg-slate-300/50 hover:text-slate-800" title="Accept">
+<span class="material-symbols-outlined text-lg">check_circle</span>
+</button>
+<button class="p-1 rounded-md text-slate-500 hover:bg-slate-300/50 hover:text-slate-800" title="Ignore">
+<span class="material-symbols-outlined text-lg">cancel</span>
+</button>
+</div>
+</div>
+</div>
+<div class="p-3 rounded-lg border border-slate-200 hover:bg-slate-100/80 cursor-pointer">
+<p class="text-sm font-medium text-slate-800">123.456.789-00</p>
+<div class="flex justify-between items-center mt-2">
+<p class="text-xs text-slate-500">Type: CPF</p>
+<div class="flex items-center gap-1">
+<button class="p-1 rounded-md text-slate-500 hover:bg-slate-300/50 hover:text-slate-800" title="Accept">
+<span class="material-symbols-outlined text-lg">check_circle</span>
+</button>
+<button class="p-1 rounded-md text-slate-500 hover:bg-slate-300/50 hover:text-slate-800" title="Ignore">
+<span class="material-symbols-outlined text-lg">cancel</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-2 p-2" x-show="activeTab === 'manual'">
+<div class="p-3 rounded-lg border border-slate-200 hover:bg-slate-100/80 cursor-pointer">
+<div class="flex justify-between items-center">
+<p class="text-base font-medium text-slate-800">Redaction 2</p>
+<div class="flex items-center gap-2">
+<button class="p-1 rounded-md text-slate-500 hover:bg-slate-300/50 hover:text-slate-800">
+<span class="material-symbols-outlined text-lg">visibility</span>
+</button>
+<button class="p-1 rounded-md text-slate-500 hover:bg-slate-300/50 hover:text-slate-800">
+<span class="material-symbols-outlined text-lg">delete</span>
+</button>
+</div>
+</div>
+</div>
+<div class="p-3 rounded-lg border border-primary bg-primary/10 cursor-pointer">
+<div class="flex justify-between items-center">
+<p class="text-base font-medium text-slate-800">Redaction 3</p>
+<div class="flex items-center gap-2">
+<button class="p-1 rounded-md text-slate-500 hover:bg-slate-300/50 hover:text-slate-800">
+<span class="material-symbols-outlined text-lg">visibility</span>
+</button>
+<button class="p-1 rounded-md text-slate-500 hover:bg-slate-300/50 hover:text-slate-800">
+<span class="material-symbols-outlined text-lg">delete</span>
+</button>
+</div>
+</div>
+</div>
+<div class="p-3 rounded-lg border border-slate-200 hover:bg-slate-100/80 cursor-pointer">
+<div class="flex justify-between items-center">
+<p class="text-base font-medium text-slate-800">Redaction 4</p>
+<div class="flex items-center gap-2">
+<button class="p-1 rounded-md text-slate-500 hover:bg-slate-300/50 hover:text-slate-800">
+<span class="material-symbols-outlined text-lg">visibility</span>
+</button>
+<button class="p-1 rounded-md text-slate-500 hover:bg-slate-300/50 hover:text-slate-800">
+<span class="material-symbols-outlined text-lg">delete</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</aside>
+</div>
+</main>
+</div>
+<script defer="" src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
+</body></html>
